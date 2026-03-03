@@ -1,0 +1,231 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OksiBake | Выпечка на заказ</title>
+  <meta name="description" content="Красивая домашняя выпечка на заказ: торты, капкейки, пироги и десертные наборы." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">
+                <span class="logo-mark">
+          <img src="assets/OksiBakeLogo.png" alt="Логотип OksiBake" />
+        </span>
+        <span>
+          <strong class="logo-title">OksiBake</strong>
+          <small class="logo-sub">Выпечка на заказ</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#catalog">Каталог</a>
+        <a href="#showcase">Слайдер</a>
+        <a href="#how">Как заказать</a>
+        <a href="#reviews">Частые вопросы</a></nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="kicker">Свежая выпечка каждый день - с. Михайловка</span>
+          <h1>Вкус домашней выпечки - это нечто большее, чем просто еда</h1>
+          <p class="lead">
+            Он возвращает в детство, когда вся квартира наполнялась согревающими ароматами
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="orderNowBtn" href="#">Заказать сейчас</a>
+            <a class="btn btn-secondary" href="#catalog">Посмотреть меню</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <b>2-4 ч</b>
+              <span>стандартный срок</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal">
+          <div class="mini-gallery">
+            <article class="photo photo-a"><p>Булочки</p></article>
+            <article class="photo photo-b"><p>Пирожки</p></article>
+            <article class="photo photo-c"><p>Пампушки</p></article>
+            <article class="photo photo-d"><p>Пироги</p></article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="catalog" class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Ассортимент товаров</h2>
+          <p>Выберите любой из предоставленных вариантов</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="badge">Булочки</span>
+            <span class="price">от 40 ₽</span>
+          </div>
+          <h3>Различные булочки</h3>
+          <ul>
+            <li>Булочка "Симмит"</li>
+            <li>Сахарная булочка</li>
+            <li>Булочка с повидлом</li>
+            <li>Булочка с заварным кремом</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="badge">Пирожки</span>
+            <span class="price">от 60 ₽</span>
+          </div>
+          <h3>Пирожки</h3>
+          <ul>
+            <li>Пирожок с повидлом</li>
+            <li>Смаженка с колбасой и сыром</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="badge">Пироги</span>
+            <span class="price">от 450 ₽</span>
+          </div>
+          <h3>Домашние пироги</h3>
+          <ul>
+            <li>Ватрушка королевская</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="wide-panel reveal">
+        <div class="chip">Михайловка</div>
+        <div class="chip">Ручная выпечка</div>
+        <div class="chip">В короткие сроки</div>
+                <div class="chip">Самовывоз</div>
+      </div>
+    </section>
+
+
+    <section id="showcase" class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Галерея работ</h2>
+          <p>Листайте кнопками, кликами по точкам или стрелками клавиатуры.</p>
+        </div>
+      </div>
+      <div class="showcase-wrap reveal">
+        <div class="showcase-carousel-container">
+          <div class="showcase-carousel" id="showcaseCarousel"></div>
+          <div class="showcase-indicators" id="showcaseIndicators"></div>
+          <div class="showcase-controls">
+            <button class="showcase-btn" type="button" id="showcasePrev" aria-label="Предыдущий слайд">‹</button>
+            <button class="showcase-btn" type="button" id="showcaseNext" aria-label="Следующий слайд">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how" class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Как проходит заказ</h2>
+          <p>Простой процесс из четырех шагов: быстро согласуем детали и зафиксируем сроки.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="step reveal">
+          <div class="step-index">Шаг 01</div>
+          <h3>Ассортимент</h3>
+          <p>Среди предоставленного ассортимента смотрите описание</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-index">Шаг 02</div>
+          <h3>Заявка</h3>
+          <p>В боте выбираете товары из ассортимента и колличество</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-index">Шаг 03</div>
+          <h3>Приготовление</h3>
+          <p>Печем в день заказа, контролируем качество на каждом этапе.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-index">Шаг 04</div>
+          <h3>Готовность</h3>
+          <p>Аккуратно упаковываем и уведомляем вас о готовности.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="reviews" class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Частые вопросы</h2>
+          <p>Несколько частых вопросов и ответы на них.</p>
+        </div>
+      </div>
+
+        <aside class="contact-box reveal">
+          <h3>Связь и заказ</h3>
+          <p>Пишите в мессенджеры, отвечаем быстро и помогаем выбрать лучший вариант.</p>
+          <p><a href="tel:+79242608034">+7 (924) 260-80-34</a></p>
+          <a class="btn btn-secondary" id="makeOrderBtn" href="#order">Сделать заказ</a>
+        </aside>
+      </div>
+
+      <div class="faq reveal">
+        <details>
+          <summary>За сколько выполняется заказ?</summary>
+          <p>За 3-4 часа, возможно больше.</p>
+        </details>
+        <details>
+          <summary>Можно ли собственный заказ не из ассортимента?</summary>
+          <p>Нет, заказ можно сделать только из ассортимента, а вот предложить что-либо в ассортимент можно.</p>
+        </details>
+        <details>
+          <summary>Вы работаете с корпоративными заказами?</summary>
+          <p>Да, принимаем заказы, но с отдельным согласованием.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 OksiBake. Выпечка на заказ в с. Михайловка.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
